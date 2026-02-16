@@ -4,7 +4,7 @@ void main() {
   runApp(const MyApp());
 }
 
-String name = "mammoth";
+String name = "your mama!!";
 int number = 42;
 double decimal = 3.14;
 bool isFlutterFun = true;
@@ -98,26 +98,41 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Container(
-          height: double.infinity,
-          width: double.infinity,
-          padding: EdgeInsets.all(50.0),
-          decoration: BoxDecoration(
-            color: Colors.orange,
-            borderRadius: BorderRadius.circular(25.0),
-          ),
+        
           child: Container(
-          height: double.infinity,
-          width: double.infinity,
-          padding: EdgeInsets.all(50.0),
-          decoration: BoxDecoration(
-            color: Colors.deepOrange,
-            borderRadius: BorderRadius.circular(25.0),
+             color: const Color.fromARGB(255, 64, 255, 102),
+             width: double.infinity,
+            child: Column(
+             
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Container(
+                height: 100.0,
+                width: 100.0,
+                margin: EdgeInsets.all(10.0),
+                padding: EdgeInsets.all(50.0),
+                decoration: BoxDecoration(
+                  color: Colors.deepOrange,
+                  borderRadius: BorderRadius.circular(25.0),
+                ),
+                child: Text(name, style: TextStyle(color: Colors.white)),
+                        ),
+            
+                   Container(
+                height: 100.0,
+                width: 100.0,
+                margin: EdgeInsets.all(10.0),
+                padding: EdgeInsets.all(50.0),
+                decoration: BoxDecoration(
+                  color: Colors.orangeAccent,
+                  borderRadius: BorderRadius.circular(25.0),
+                ),
+                child: Text("Daddy !!", style: TextStyle(color: Colors.white)),
+                        ),
+              ],
+            ),
           ),
-          child: Text(name, style: TextStyle(color: Colors.white)),
-        ),
-        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
