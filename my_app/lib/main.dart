@@ -100,17 +100,17 @@ class _MyHomePageState extends State<MyHomePage> {
         // Center is a layout widget. It takes a single child and positions it
         
           child: Container(
-             color: const Color.fromARGB(255, 64, 255, 102),
+             color: Colors.black,
              width: double.infinity,
             child: Column(
              
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.end,
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
                 height: 100.0,
                 width: 100.0,
-                margin: EdgeInsets.all(10.0),
                 padding: EdgeInsets.all(50.0),
                 decoration: BoxDecoration(
                   color: Colors.deepOrange,
@@ -122,7 +122,6 @@ class _MyHomePageState extends State<MyHomePage> {
                    Container(
                 height: 100.0,
                 width: 100.0,
-                margin: EdgeInsets.all(10.0),
                 padding: EdgeInsets.all(50.0),
                 decoration: BoxDecoration(
                   color: Colors.orangeAccent,
